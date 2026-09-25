@@ -1,0 +1,87 @@
+[
+  {
+    "label": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+    "input": {
+      "peso": 70,
+      "altura": 175,
+      "pop": "g"
+    },
+    "expected": {
+      "raw": {
+        "imc": 22.857
+      },
+      "main": "22,9",
+      "level": "low",
+      "verdict": "Eutrofia"
+    },
+    "originalInput": {
+      "peso": 70,
+      "altura": 175,
+      "pop": "g"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+    "input": {
+      "peso": 100,
+      "altura": 200,
+      "pop": "g"
+    },
+    "expected": {
+      "raw": {
+        "imc": 25
+      },
+      "level": "mid",
+      "verdict": "Sobrepeso"
+    },
+    "originalInput": {
+      "peso": 100,
+      "altura": 200,
+      "pop": "g"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+    "input": {
+      "peso": 95,
+      "altura": 170,
+      "pop": "g"
+    },
+    "expected": {
+      "raw": {
+        "imc": 32.872
+      },
+      "level": "high",
+      "verdict": "Obesidade grau I"
+    },
+    "originalInput": {
+      "peso": 95,
+      "altura": 170,
+      "pop": "g"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+    "input": {
+      "peso": 70,
+      "altura": 170,
+      "pop": "a"
+    },
+    "expected": {
+      "raw": {
+        "imc": 24.221
+      },
+      "level": "mid",
+      "verdict": "risco aumentado"
+    },
+    "originalInput": {
+      "peso": 70,
+      "altura": 170,
+      "pop": "a"
+    },
+    "expandedZeroOptions": []
+  }
+]

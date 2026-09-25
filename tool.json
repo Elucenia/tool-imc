@@ -1,0 +1,225 @@
+{
+  "tool": {
+    "id": "imc",
+    "title": "IMC (Índice de Massa Corporal)",
+    "short": "Classificação da OMS e pontos de corte para asiáticos",
+    "desc": "Calcule o índice de massa corporal (IMC) com a classificação da OMS, a faixa de peso adequado para a altura e os pontos de ação para populações asiáticas.",
+    "lead": "Relaciona peso e altura para classificar o estado nutricional de adultos (≥ 18 anos) segundo a Organização Mundial da Saúde.",
+    "spec": [
+      "clinica-medica",
+      "nutrologia",
+      "endocrinologia-e-metabologia",
+      "medicina-de-familia-e-comunidade",
+      "cardiologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "peso",
+        "Peso",
+        "num",
+        {
+          "min": 20,
+          "max": 350,
+          "step": 0.1,
+          "unit": "kg",
+          "ph": "70"
+        }
+      ],
+      [
+        "altura",
+        "Altura",
+        "num",
+        {
+          "min": 100,
+          "max": 230,
+          "step": 0.5,
+          "unit": "cm",
+          "ph": "170"
+        }
+      ],
+      [
+        "pop",
+        "População",
+        "radio",
+        {
+          "opts": {
+            "g": "Geral",
+            "a": "Asiática"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>IMC = peso (kg) ÷ altura² (m²).</p><p>Em populações asiáticas, a OMS (2004) acrescentou pontos de ação em saúde pública: 23 kg/m² (risco aumentado) e 27,5 kg/m² (alto risco).</p>",
+    "table": [
+      [
+        "IMC (kg/m²)",
+        "Classificação da OMS"
+      ],
+      [
+        "&lt; 18,5",
+        "Baixo peso"
+      ],
+      [
+        "18,5 a 24,9",
+        "Eutrofia"
+      ],
+      [
+        "25,0 a 29,9",
+        "Sobrepeso (pré-obesidade)"
+      ],
+      [
+        "30,0 a 34,9",
+        "Obesidade grau I"
+      ],
+      [
+        "35,0 a 39,9",
+        "Obesidade grau II"
+      ],
+      [
+        "≥ 40,0",
+        "Obesidade grau III"
+      ]
+    ],
+    "table_note": "Asiáticos (OMS 2004): 18,5 a 22,9 risco aceitável; 23,0 a 27,4 risco aumentado; ≥ 27,5 alto risco.",
+    "tips": [
+      "O IMC não distingue massa magra de gordura: atletas musculosos podem ter IMC de sobrepeso, e idosos com sarcopenia podem ter IMC normal com excesso de gordura.",
+      "Complete a avaliação com a circunferência abdominal: o acúmulo visceral eleva o risco cardiometabólico mesmo com IMC normal.",
+      "Não use estes pontos de corte em crianças e adolescentes: para eles, use o IMC para idade e sexo em escore-z (curvas da OMS).",
+      "Em idosos, muitos protocolos brasileiros de atenção básica adotam faixas diferentes (baixo peso &lt; 22 e sobrepeso &gt; 27 kg/m², de Lipschitz).",
+      "Em gestantes, use as curvas de ganho de peso gestacional, não a classificação do adulto."
+    ],
+    "sources": [
+      [
+        "World Health Organization. Obesity: preventing and managing the global epidemic. Report of a WHO consultation. WHO Technical Report Series 894, 2000.",
+        "https://pubmed.ncbi.nlm.nih.gov/11234459/"
+      ],
+      [
+        "WHO Expert Consultation. Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies. Lancet, 2004.",
+        "https://doi.org/10.1016/S0140-6736(03)15268-3"
+      ]
+    ],
+    "cases": [
+      [
+        "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        {
+          "peso": 70,
+          "altura": 175,
+          "pop": "g"
+        },
+        {
+          "raw": {
+            "imc": 22.857
+          },
+          "main": "22,9",
+          "level": "low",
+          "verdict": "Eutrofia"
+        }
+      ],
+      [
+        "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        {
+          "peso": 100,
+          "altura": 200,
+          "pop": "g"
+        },
+        {
+          "raw": {
+            "imc": 25
+          },
+          "level": "mid",
+          "verdict": "Sobrepeso"
+        }
+      ],
+      [
+        "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        {
+          "peso": 95,
+          "altura": 170,
+          "pop": "g"
+        },
+        {
+          "raw": {
+            "imc": 32.872
+          },
+          "level": "high",
+          "verdict": "Obesidade grau I"
+        }
+      ],
+      [
+        "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        {
+          "peso": 70,
+          "altura": 170,
+          "pop": "a"
+        },
+        {
+          "raw": {
+            "imc": 24.221
+          },
+          "level": "mid",
+          "verdict": "risco aumentado"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Centímetros para metros: 80/2²=20",
+          "input": {
+            "peso": 80,
+            "altura": 200,
+            "pop": "g"
+          },
+          "expected": {
+            "imc": 20
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Dobrar massa com altura fixa dobra o índice",
+          "input": {
+            "peso": 160,
+            "altura": 200,
+            "pop": "g"
+          },
+          "expected": {
+            "imc": 40
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
