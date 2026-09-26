@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-imc",
   "version": "0.1.0",
-  "description": "IMC (Índice de Massa Corporal) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "IMC (Índice de Massa Corporal) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
