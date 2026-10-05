@@ -1,0 +1,833 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "imc",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/imc/calculator.js",
+    "sha256": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc",
+    "bytes": 5107
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "imc",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+      "originalInput": {
+        "peso": 70,
+        "altura": 175,
+        "pop": "g"
+      },
+      "input": {
+        "peso": 70,
+        "altura": 175,
+        "pop": "g"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "imc": 22.857
+        },
+        "main": "22,9",
+        "level": "low",
+        "verdict": "Eutrofia"
+      },
+      "recordedResult": {
+        "main": [
+          "22,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 22.857142857142858
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "peso": 70,
+            "altura": 175,
+            "pop": "g"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+          "startedAt": "2026-10-05T17:38:37.368Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "imc",
+              "main": [
+                "22,9",
+                "kg/m²"
+              ],
+              "label": "Índice de massa corporal",
+              "raw": {
+                "imc": 22.857142857142858
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "04eea603d5d3f87a5116386dd2cd9da6d74a30e90d0cb207259065e97ed47528",
+          "bytes": 154,
+          "elapsedMs": 3.4892999999865424
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "startedAt": "2026-10-05T17:38:37.368Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "imc",
+            "main": [
+              "22,9",
+              "kg/m²"
+            ],
+            "label": "Índice de massa corporal",
+            "raw": {
+              "imc": 22.857142857142858
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "04eea603d5d3f87a5116386dd2cd9da6d74a30e90d0cb207259065e97ed47528",
+        "bytes": 154,
+        "elapsedMs": 3.4892999999865424
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "22,9",
+            "obtained": "22,9",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.imc",
+            "expected": 22.857,
+            "obtained": 22.857142857142858,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.0001428571428583325,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.imc",
+            "expected": 22.857142857142858,
+            "obtained": 22.857142857142858,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "22,9",
+            "obtained": "22,9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg/m²",
+            "obtained": "kg/m²",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "imc",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+      "originalInput": {
+        "peso": 100,
+        "altura": 200,
+        "pop": "g"
+      },
+      "input": {
+        "peso": 100,
+        "altura": 200,
+        "pop": "g"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "imc": 25
+        },
+        "level": "mid",
+        "verdict": "Sobrepeso"
+      },
+      "recordedResult": {
+        "main": [
+          "25,0",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "peso": 100,
+            "altura": 200,
+            "pop": "g"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+          "startedAt": "2026-10-05T17:38:37.680Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "imc",
+              "main": [
+                "25,0",
+                "kg/m²"
+              ],
+              "label": "Índice de massa corporal",
+              "raw": {
+                "imc": 25
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "42892d80706283d10f9e7cb16363858e7d5531ee0d147d71eee99e802c0b76da",
+          "bytes": 138,
+          "elapsedMs": 4.789100000023609
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "startedAt": "2026-10-05T17:38:37.680Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "imc",
+            "main": [
+              "25,0",
+              "kg/m²"
+            ],
+            "label": "Índice de massa corporal",
+            "raw": {
+              "imc": 25
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "42892d80706283d10f9e7cb16363858e7d5531ee0d147d71eee99e802c0b76da",
+        "bytes": 138,
+        "elapsedMs": 4.789100000023609
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.imc",
+            "expected": 25,
+            "obtained": 25,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.imc",
+            "expected": 25,
+            "obtained": 25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "25,0",
+            "obtained": "25,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg/m²",
+            "obtained": "kg/m²",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "imc",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+      "originalInput": {
+        "peso": 95,
+        "altura": 170,
+        "pop": "g"
+      },
+      "input": {
+        "peso": 95,
+        "altura": 170,
+        "pop": "g"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "imc": 32.872
+        },
+        "level": "high",
+        "verdict": "Obesidade grau I"
+      },
+      "recordedResult": {
+        "main": [
+          "32,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 32.871972318339104
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "peso": 95,
+            "altura": 170,
+            "pop": "g"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+          "startedAt": "2026-10-05T17:38:37.994Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "imc",
+              "main": [
+                "32,9",
+                "kg/m²"
+              ],
+              "label": "Índice de massa corporal",
+              "raw": {
+                "imc": 32.871972318339104
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "9c85f7e64346c86f1e04e8f84e045f46783b7854785c1002d8b8d7adebe75486",
+          "bytes": 154,
+          "elapsedMs": 6.698899999988498
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "startedAt": "2026-10-05T17:38:37.994Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "imc",
+            "main": [
+              "32,9",
+              "kg/m²"
+            ],
+            "label": "Índice de massa corporal",
+            "raw": {
+              "imc": 32.871972318339104
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "9c85f7e64346c86f1e04e8f84e045f46783b7854785c1002d8b8d7adebe75486",
+        "bytes": 154,
+        "elapsedMs": 6.698899999988498
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.imc",
+            "expected": 32.872,
+            "obtained": 32.871972318339104,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.0000276816608959507,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.imc",
+            "expected": 32.871972318339104,
+            "obtained": 32.871972318339104,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "32,9",
+            "obtained": "32,9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg/m²",
+            "obtained": "kg/m²",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "imc",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+      "originalInput": {
+        "peso": 70,
+        "altura": 170,
+        "pop": "a"
+      },
+      "input": {
+        "peso": 70,
+        "altura": 170,
+        "pop": "a"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "imc": 24.221
+        },
+        "level": "mid",
+        "verdict": "risco aumentado"
+      },
+      "recordedResult": {
+        "main": [
+          "24,2",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 24.221453287197235
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "peso": 70,
+            "altura": 170,
+            "pop": "a"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+          "startedAt": "2026-10-05T17:38:38.308Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "imc",
+              "main": [
+                "24,2",
+                "kg/m²"
+              ],
+              "label": "Índice de massa corporal",
+              "raw": {
+                "imc": 24.221453287197235
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c2a638462cf2d3dab66edd1d80e8f85736bec1cddfec189ce8189122d72c286c",
+          "bytes": 154,
+          "elapsedMs": 9.622700000007171
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/imc/calculate",
+        "startedAt": "2026-10-05T17:38:38.308Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "imc",
+            "main": [
+              "24,2",
+              "kg/m²"
+            ],
+            "label": "Índice de massa corporal",
+            "raw": {
+              "imc": 24.221453287197235
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c2a638462cf2d3dab66edd1d80e8f85736bec1cddfec189ce8189122d72c286c",
+        "bytes": 154,
+        "elapsedMs": 9.622700000007171
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.imc",
+            "expected": 24.221,
+            "obtained": 24.221453287197235,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.00045328719723514155,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.imc",
+            "expected": 24.221453287197235,
+            "obtained": 24.221453287197235,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "24,2",
+            "obtained": "24,2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg/m²",
+            "obtained": "kg/m²",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
