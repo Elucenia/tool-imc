@@ -1,6 +1,14 @@
 [
   {
-    "label": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+    "id": "imc",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+    "originalInput": {
+      "peso": 70,
+      "altura": 175,
+      "pop": "g"
+    },
     "input": {
       "peso": 70,
       "altura": 175,
@@ -14,15 +22,35 @@
       "level": "low",
       "verdict": "Eutrofia"
     },
-    "originalInput": {
-      "peso": 70,
-      "altura": 175,
-      "pop": "g"
+    "recordedResult": {
+      "main": [
+        "22,9",
+        "kg/m²"
+      ],
+      "label": "Índice de massa corporal",
+      "raw": {
+        "imc": 22.857142857142858
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+    "id": "imc",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+    "originalInput": {
+      "peso": 100,
+      "altura": 200,
+      "pop": "g"
+    },
     "input": {
       "peso": 100,
       "altura": 200,
@@ -35,15 +63,35 @@
       "level": "mid",
       "verdict": "Sobrepeso"
     },
-    "originalInput": {
-      "peso": 100,
-      "altura": 200,
-      "pop": "g"
+    "recordedResult": {
+      "main": [
+        "25,0",
+        "kg/m²"
+      ],
+      "label": "Índice de massa corporal",
+      "raw": {
+        "imc": 25
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+    "id": "imc",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+    "originalInput": {
+      "peso": 95,
+      "altura": 170,
+      "pop": "g"
+    },
     "input": {
       "peso": 95,
       "altura": 170,
@@ -56,15 +104,35 @@
       "level": "high",
       "verdict": "Obesidade grau I"
     },
-    "originalInput": {
-      "peso": 95,
-      "altura": 170,
-      "pop": "g"
+    "recordedResult": {
+      "main": [
+        "32,9",
+        "kg/m²"
+      ],
+      "label": "Índice de massa corporal",
+      "raw": {
+        "imc": 32.871972318339104
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+    "id": "imc",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+    "originalInput": {
+      "peso": 70,
+      "altura": 170,
+      "pop": "a"
+    },
     "input": {
       "peso": 70,
       "altura": 170,
@@ -77,11 +145,23 @@
       "level": "mid",
       "verdict": "risco aumentado"
     },
-    "originalInput": {
-      "peso": 70,
-      "altura": 170,
-      "pop": "a"
+    "recordedResult": {
+      "main": [
+        "24,2",
+        "kg/m²"
+      ],
+      "label": "Índice de massa corporal",
+      "raw": {
+        "imc": 24.221453287197235
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

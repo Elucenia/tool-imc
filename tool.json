@@ -5,6 +5,7 @@
     "short": "Classificação da OMS e pontos de corte para asiáticos",
     "desc": "Calcule o índice de massa corporal (IMC) com a classificação da OMS, a faixa de peso adequado para a altura e os pontos de ação para populações asiáticas.",
     "lead": "Relaciona peso e altura para classificar o estado nutricional de adultos (≥ 18 anos) segundo a Organização Mundial da Saúde.",
+    "kind": "Calculadora",
     "spec": [
       "clinica-medica",
       "nutrologia",
@@ -12,7 +13,6 @@
       "medicina-de-familia-e-comunidade",
       "cardiologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "peso",
@@ -51,44 +51,6 @@
       ]
     ],
     "formula": "<p>IMC = peso (kg) ÷ altura² (m²).</p><p>Em populações asiáticas, a OMS (2004) acrescentou pontos de ação em saúde pública: 23 kg/m² (risco aumentado) e 27,5 kg/m² (alto risco).</p>",
-    "table": [
-      [
-        "IMC (kg/m²)",
-        "Classificação da OMS"
-      ],
-      [
-        "&lt; 18,5",
-        "Baixo peso"
-      ],
-      [
-        "18,5 a 24,9",
-        "Eutrofia"
-      ],
-      [
-        "25,0 a 29,9",
-        "Sobrepeso (pré-obesidade)"
-      ],
-      [
-        "30,0 a 34,9",
-        "Obesidade grau I"
-      ],
-      [
-        "35,0 a 39,9",
-        "Obesidade grau II"
-      ],
-      [
-        "≥ 40,0",
-        "Obesidade grau III"
-      ]
-    ],
-    "table_note": "Asiáticos (OMS 2004): 18,5 a 22,9 risco aceitável; 23,0 a 27,4 risco aumentado; ≥ 27,5 alto risco.",
-    "tips": [
-      "O IMC não distingue massa magra de gordura: atletas musculosos podem ter IMC de sobrepeso, e idosos com sarcopenia podem ter IMC normal com excesso de gordura.",
-      "Complete a avaliação com a circunferência abdominal: o acúmulo visceral eleva o risco cardiometabólico mesmo com IMC normal.",
-      "Não use estes pontos de corte em crianças e adolescentes: para eles, use o IMC para idade e sexo em escore-z (curvas da OMS).",
-      "Em idosos, muitos protocolos brasileiros de atenção básica adotam faixas diferentes (baixo peso &lt; 22 e sobrepeso &gt; 27 kg/m², de Lipschitz).",
-      "Em gestantes, use as curvas de ganho de peso gestacional, não a classificação do adulto."
-    ],
     "sources": [
       [
         "World Health Organization. Obesity: preventing and managing the global epidemic. Report of a WHO consultation. WHO Technical Report Series 894, 2000.",
@@ -97,6 +59,10 @@
       [
         "WHO Expert Consultation. Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies. Lancet, 2004.",
         "https://doi.org/10.1016/S0140-6736(03)15268-3"
+      ],
+      [
+        "https://www.cdc.gov/bmi/faq/",
+        "https://www.cdc.gov/bmi/faq/"
       ]
     ],
     "cases": [
@@ -162,9 +128,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -177,40 +140,150 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "OMS/TRS 894/2000:kg/m², adultos; pontosaçãoasiáticos 23/27,5 WHO 2004",
+    "implementationVersion": "imc@native-2026-10-03+3c8f333d73f2",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/11234459/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "IMC = peso (kg) ÷ altura² (m²). Em populações asiáticas, a OMS (2004) acrescentou pontos de ação em saúde pública: 23 kg/m² (risco aumentado) e 27,5 kg/m² (alto risco).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "peso",
+            "label": "Peso",
+            "type": "num",
+            "min": 20,
+            "max": 350,
+            "unit": "kg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "altura",
+            "label": "Altura",
+            "type": "num",
+            "min": 100,
+            "max": 230,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pop",
+            "label": "População",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "g": "Geral",
+              "a": "Asiática"
+            }
+          }
+        ],
+        "hash": "92d648102659702eea543627c14803fe0a854065205250a9d5e2d42906f56c07"
+      },
+      "sourceEditions": [
         {
-          "label": "Centímetros para metros: 80/2²=20",
-          "input": {
-            "peso": 80,
-            "altura": 200,
-            "pop": "g"
+          "citation": "World Health Organization. Obesity: preventing and managing the global epidemic. Report of a WHO consultation. WHO Technical Report Series 894, 2000.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11234459/",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Obesity: preventing and managing the global epidemic. Report of a WHO consultation.",
+            "year": "2000",
+            "firstPublicationDate": "2000-01-01",
+            "pmid": "11234459",
+            "journal": "World Health Organization technical report series",
+            "authors": ""
           },
-          "expected": {
-            "imc": 20
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/11234459/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "35adc50cd8bb2745f61c2912ffd6b06e7573c52b2f4c2a9dd66f766f58c5cd0c",
+          "matchedBy": "exact-DOI-or-PMID"
         },
         {
-          "label": "Dobrar massa com altura fixa dobra o índice",
-          "input": {
-            "peso": 160,
-            "altura": 200,
-            "pop": "g"
+          "citation": "WHO Expert Consultation. Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies. Lancet, 2004.",
+          "url": "https://doi.org/10.1016/S0140-6736(03)15268-3",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies.",
+            "year": "2004",
+            "firstPublicationDate": "2004-01-01",
+            "doi": "10.1016/s0140-6736(03)15268-3",
+            "pmid": "14726171",
+            "journal": "Lancet (London, England)",
+            "authors": "WHO Expert Consultation."
           },
-          "expected": {
-            "imc": 40
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14726171/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "65a118cccdc5d3847860917802f13b49dc7cb7bff279ba0d4f5cb7c29c9eaf91",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc"
+    },
+    "limits": "O IMC relaciona peso e altura, mas não mede diretamente a gordura corporal nem distingue gordura, músculo e osso. A interpretação pediátrica depende de idade, sexo e curvas de referência; aplicar a classificação adulta a um valor calculado em criança não demonstra sua aplicabilidade. O CDC distingue crianças e adolescentes de 2–19 anos e adultos a partir de 20 anos; essa fronteira pertence à orientação do CDC, sem substituir automaticamente a edição da classificação apresentada aqui. O resultado deve ser interpretado com outros dados clínicos.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.181Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não contém cortes numéricos, elegibilidade ≥ 18, exceções gestação/muscularidade ou pontos asiáticos de 2004; não inferir tabela completa do resumo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "primarySupplements": [
+        {
+          "url": "https://www.cdc.gov/bmi/faq/",
+          "scope": "Official FAQ, calculation/adult-child interpretation/body-composition sections read; source date2024-06-28. Does not validate every local classification edition."
         }
       ]
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/imc/calculator.js",
+    "bytes": 5107,
+    "sha256": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "19ec239dd455416f03fd0e01498344d00a8f777b56e19cc39538fe48a9f8e8d6",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "23eb4cd90f07a767747af2749e83bd6f5894fdc9cf93e6feee92cb2ebfd902e0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "23eb4cd90f07a767747af2749e83bd6f5894fdc9cf93e6feee92cb2ebfd902e0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

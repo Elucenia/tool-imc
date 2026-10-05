@@ -1,0 +1,365 @@
+{
+  "id": "imc",
+  "at": "2026-10-05T17:29:46.480Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/imc/calculator.js",
+    "bytes": 5107,
+    "sha256": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc"
+  },
+  "cases": [
+    {
+      "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+      "input": {
+        "peso": 70,
+        "altura": 175,
+        "pop": "g"
+      },
+      "obtained": {
+        "id": "imc",
+        "main": [
+          "22,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 22.857142857142858
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "22,9",
+          "obtained": "22,9",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.imc",
+          "expected": 22.857,
+          "obtained": 22.857142857142858,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.0001428571428583325,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.imc",
+          "expected": 22.857142857142858,
+          "obtained": 22.857142857142858,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "22,9",
+          "obtained": "22,9",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "kg/m²",
+          "obtained": "kg/m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+      "input": {
+        "peso": 100,
+        "altura": 200,
+        "pop": "g"
+      },
+      "obtained": {
+        "id": "imc",
+        "main": [
+          "25,0",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 25
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.imc",
+          "expected": 25,
+          "obtained": 25,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.imc",
+          "expected": 25,
+          "obtained": 25,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "25,0",
+          "obtained": "25,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "kg/m²",
+          "obtained": "kg/m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+      "input": {
+        "peso": 95,
+        "altura": 170,
+        "pop": "g"
+      },
+      "obtained": {
+        "id": "imc",
+        "main": [
+          "32,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 32.871972318339104
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.imc",
+          "expected": 32.872,
+          "obtained": 32.871972318339104,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.0000276816608959507,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.imc",
+          "expected": 32.871972318339104,
+          "obtained": 32.871972318339104,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "32,9",
+          "obtained": "32,9",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "kg/m²",
+          "obtained": "kg/m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+      "input": {
+        "peso": 70,
+        "altura": 170,
+        "pop": "a"
+      },
+      "obtained": {
+        "id": "imc",
+        "main": [
+          "24,2",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 24.221453287197235
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.imc",
+          "expected": 24.221,
+          "obtained": 24.221453287197235,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.00045328719723514155,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.imc",
+          "expected": 24.221453287197235,
+          "obtained": 24.221453287197235,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "24,2",
+          "obtained": "24,2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "kg/m²",
+          "obtained": "kg/m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 27,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
