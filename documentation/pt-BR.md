@@ -76,3 +76,44 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Eutrofia (peso adequado) (OMS)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Faixa de peso com IMC de 18,5 a 24,9 | 56,7 a 76,3 kg |
+
+
+### 2
+
+Sobrepeso (pré-obesidade) (OMS)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Faixa de peso com IMC de 18,5 a 24,9 | 74,0 a 99,6 kg |
+
+
+### 3
+
+Obesidade grau I (OMS)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Faixa de peso com IMC de 18,5 a 24,9 | 53,5 a 72,0 kg |
+
+
+### 4
+
+Eutrofia (peso adequado) (OMS); em asiáticos, risco aumentado
+
+| Detalhes do resultado | |
+| --- | --- |
+| Faixa de peso com IMC de 18,5 a 24,9 | 53,5 a 72,0 kg |
+| Pontos de ação para asiáticos (OMS 2004) | risco aumentado |
+

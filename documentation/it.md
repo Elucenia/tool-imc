@@ -76,3 +76,44 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Eutrofia (peso adeguato) (OMS)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Intervallo di peso con IMC da 18,5 a 24,9 | 56,7 a 76,3 kg |
+
+
+### 2
+
+Sovrappeso (pre-obesità) (OMS)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Intervallo di peso con IMC da 18,5 a 24,9 | 74,0 a 99,6 kg |
+
+
+### 3
+
+Obesità di classe I (OMS)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Intervallo di peso con IMC da 18,5 a 24,9 | 53,5 a 72,0 kg |
+
+
+### 4
+
+Normopeso (peso adeguato) (OMS); negli asiatici, rischio aumentato
+
+| Dettagli del risultato | |
+| --- | --- |
+| Intervallo di peso con IMC da 18,5 a 24,9 | 53,5 a 72,0 kg |
+| Punti di azione per asiatici (OMS 2004) | rischio aumentato |
+

@@ -1,0 +1,257 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "imc",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ec1d3cee4adbd2655d9bbaa22d1bc2583a90326f",
+    "oldEngineSha256": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc",
+    "currentEngineSha256": "f51006a7799c754590203a52c5fc3edd97c2b91df8ee8a644180bf6990b041f3"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+      "input": {
+        "peso": 70,
+        "altura": 175,
+        "pop": "g"
+      },
+      "publicOutput": {
+        "id": "imc",
+        "main": [
+          "22,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 22.857142857142858
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "imc": 22.857
+        },
+        "main": "22,9",
+        "level": "low",
+        "verdict": "Eutrofia"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "22,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "level": "low",
+        "verdict": "Eutrofia (peso adequado) (OMS)",
+        "rows": [
+          [
+            "Faixa de peso com IMC de 18,5 a 24,9",
+            "56,7 a 76,3 kg"
+          ]
+        ],
+        "raw": {
+          "imc": 22.857142857142858
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+      "input": {
+        "peso": 100,
+        "altura": 200,
+        "pop": "g"
+      },
+      "publicOutput": {
+        "id": "imc",
+        "main": [
+          "25,0",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 25
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "imc": 25
+        },
+        "level": "mid",
+        "verdict": "Sobrepeso"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "25,0",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "level": "mid",
+        "verdict": "Sobrepeso (pré-obesidade) (OMS)",
+        "rows": [
+          [
+            "Faixa de peso com IMC de 18,5 a 24,9",
+            "74,0 a 99,6 kg"
+          ]
+        ],
+        "raw": {
+          "imc": 25
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+      "input": {
+        "peso": 95,
+        "altura": 170,
+        "pop": "g"
+      },
+      "publicOutput": {
+        "id": "imc",
+        "main": [
+          "32,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 32.871972318339104
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "imc": 32.872
+        },
+        "level": "high",
+        "verdict": "Obesidade grau I"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "32,9",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "level": "high",
+        "verdict": "Obesidade grau I (OMS)",
+        "rows": [
+          [
+            "Faixa de peso com IMC de 18,5 a 24,9",
+            "53,5 a 72,0 kg"
+          ]
+        ],
+        "raw": {
+          "imc": 32.871972318339104
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+      "input": {
+        "peso": 70,
+        "altura": 170,
+        "pop": "a"
+      },
+      "publicOutput": {
+        "id": "imc",
+        "main": [
+          "24,2",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "raw": {
+          "imc": 24.221453287197235
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "imc": 24.221
+        },
+        "level": "mid",
+        "verdict": "risco aumentado"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "24,2",
+          "kg/m²"
+        ],
+        "label": "Índice de massa corporal",
+        "level": "mid",
+        "verdict": "Eutrofia (peso adequado) (OMS); em asiáticos, risco aumentado",
+        "rows": [
+          [
+            "Faixa de peso com IMC de 18,5 a 24,9",
+            "53,5 a 72,0 kg"
+          ],
+          [
+            "Pontos de ação para asiáticos (OMS 2004)",
+            "risco aumentado"
+          ]
+        ],
+        "raw": {
+          "imc": 24.221453287197235
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

@@ -143,7 +143,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "OMS/TRS 894/2000:kg/m², adultos; pontosaçãoasiáticos 23/27,5 WHO 2004",
-    "implementationVersion": "imc@native-2026-10-03+3c8f333d73f2",
+    "implementationVersion": "imc@native-2026-10-05+f51006a7799c",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/11234459/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -242,7 +242,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc"
+      "implementationHash": "f51006a7799c754590203a52c5fc3edd97c2b91df8ee8a644180bf6990b041f3",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "imc@native-2026-10-03+3c8f333d73f2",
+          "previousImplementationHash": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc",
+          "implementationHash": "f51006a7799c754590203a52c5fc3edd97c2b91df8ee8a644180bf6990b041f3",
+          "scientificBodySha256": "77e57c8a076013ec221b554f22a3db49005bb1bbda94c9fc25c5d052c52f6968",
+          "metadataContractHash": "92d648102659702eea543627c14803fe0a854065205250a9d5e2d42906f56c07",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O IMC relaciona peso e altura, mas não mede diretamente a gordura corporal nem distingue gordura, músculo e osso. A interpretação pediátrica depende de idade, sexo e curvas de referência; aplicar a classificação adulta a um valor calculado em criança não demonstra sua aplicabilidade. O CDC distingue crianças e adolescentes de 2–19 anos e adultos a partir de 20 anos; essa fronteira pertence à orientação do CDC, sem substituir automaticamente a edição da classificação apresentada aqui. O resultado deve ser interpretado com outros dados clínicos.",
     "sourceLimitEvidence": {
@@ -267,20 +295,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/imc/calculator.js",
-    "bytes": 5107,
-    "sha256": "3c8f333d73f2f2a963c844fdae5c7413ba44a7acdcb9d7b38af8538e3ac102bc"
+    "bytes": 5312,
+    "sha256": "f51006a7799c754590203a52c5fc3edd97c2b91df8ee8a644180bf6990b041f3"
   },
-  "sourceToolSha256": "19ec239dd455416f03fd0e01498344d00a8f777b56e19cc39538fe48a9f8e8d6",
+  "sourceToolSha256": "1cbeb7ce916623c3aed7dc6e8251692d12bbe5ab092da4470df23f1c9fe9c895",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "23eb4cd90f07a767747af2749e83bd6f5894fdc9cf93e6feee92cb2ebfd902e0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "23eb4cd90f07a767747af2749e83bd6f5894fdc9cf93e6feee92cb2ebfd902e0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

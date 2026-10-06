@@ -76,3 +76,44 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Eutrophy (adequate weight) (WHO)
+
+| Result details | |
+| --- | --- |
+| Weight range with BMI from 18.5 to 24.9 | 56.7 to 76.3 kg |
+
+
+### 2
+
+Overweight (pre-obesity) (WHO)
+
+| Result details | |
+| --- | --- |
+| Weight range with BMI from 18.5 to 24.9 | 74.0 to 99.6 kg |
+
+
+### 3
+
+Class I obesity (WHO)
+
+| Result details | |
+| --- | --- |
+| Weight range with BMI from 18.5 to 24.9 | 53.5 to 72.0 kg |
+
+
+### 4
+
+Normal weight (adequate weight) (WHO); in Asians, increased risk
+
+| Result details | |
+| --- | --- |
+| Weight range with BMI from 18.5 to 24.9 | 53.5 to 72.0 kg |
+| Asian action points (WHO 2004) | increased risk |
+

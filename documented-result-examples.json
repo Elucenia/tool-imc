@@ -1,0 +1,1341 @@
+{
+  "id": "imc",
+  "implementationVersion": "imc@native-2026-10-05+f51006a7799c",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faixa de peso com IMC de 18,5 a 24,9",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "56,7 a 76,3 kg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrofia (peso adequado) (OMS)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faixa de peso com IMC de 18,5 a 24,9",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "74,0 a 99,6 kg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sobrepeso (pré-obesidade) (OMS)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faixa de peso com IMC de 18,5 a 24,9",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "53,5 a 72,0 kg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Obesidade grau I (OMS)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faixa de peso com IMC de 18,5 a 24,9",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "53,5 a 72,0 kg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pontos de ação para asiáticos (OMS 2004)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "risco aumentado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrofia (peso adequado) (OMS); em asiáticos, risco aumentado",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Weight range with BMI from 18.5 to 24.9",
+                "locale": "en",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56.7 to 76.3 kg",
+                "locale": "en",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrophy (adequate weight) (WHO)",
+            "locale": "en",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Weight range with BMI from 18.5 to 24.9",
+                "locale": "en",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74.0 to 99.6 kg",
+                "locale": "en",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Overweight (pre-obesity) (WHO)",
+            "locale": "en",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Weight range with BMI from 18.5 to 24.9",
+                "locale": "en",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5 to 72.0 kg",
+                "locale": "en",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Class I obesity (WHO)",
+            "locale": "en",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Weight range with BMI from 18.5 to 24.9",
+                "locale": "en",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5 to 72.0 kg",
+                "locale": "en",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Asian action points (WHO 2004)",
+                "locale": "en",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "increased risk",
+                "locale": "en",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normal weight (adequate weight) (WHO); in Asians, increased risk",
+            "locale": "en",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rango de peso con IMC de 18,5 a 24,9",
+                "locale": "es",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56,7 a 76,3 kg",
+                "locale": "es",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrofia (peso adecuado) (OMS)",
+            "locale": "es",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rango de peso con IMC de 18,5 a 24,9",
+                "locale": "es",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74,0 a 99,6 kg",
+                "locale": "es",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sobrepeso (preobesidad) (OMS)",
+            "locale": "es",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rango de peso con IMC de 18,5 a 24,9",
+                "locale": "es",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 a 72,0 kg",
+                "locale": "es",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Obesidad grado I (OMS)",
+            "locale": "es",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rango de peso con IMC de 18,5 a 24,9",
+                "locale": "es",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 a 72,0 kg",
+                "locale": "es",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Puntos de acción para asiáticos (OMS 2004)",
+                "locale": "es",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "riesgo aumentado",
+                "locale": "es",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrofia (peso adecuado) (OMS); en asiáticos, riesgo aumentado",
+            "locale": "es",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Plage de poids avec IMC de 18,5 à 24,9",
+                "locale": "fr",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56,7 à 76,3 kg",
+                "locale": "fr",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrophie (poids adéquat) (OMS)",
+            "locale": "fr",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Plage de poids avec IMC de 18,5 à 24,9",
+                "locale": "fr",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74,0 à 99,6 kg",
+                "locale": "fr",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Surpoids (pré-obésité) (OMS)",
+            "locale": "fr",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Plage de poids avec IMC de 18,5 à 24,9",
+                "locale": "fr",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 à 72,0 kg",
+                "locale": "fr",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Obésité de classe I (OMS)",
+            "locale": "fr",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Plage de poids avec IMC de 18,5 à 24,9",
+                "locale": "fr",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 à 72,0 kg",
+                "locale": "fr",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Seuils d’action pour les Asiatiques (OMS 2004)",
+                "locale": "fr",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "risque accru",
+                "locale": "fr",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normopondéral (poids adéquat) (OMS) ; chez les Asiatiques, risque accru",
+            "locale": "fr",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gewichtsbereich mit einem BMI von 18,5 bis 24,9",
+                "locale": "de",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56,7 bis 76,3 kg",
+                "locale": "de",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrophie (angemessenes Gewicht) (WHO)",
+            "locale": "de",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gewichtsbereich mit einem BMI von 18,5 bis 24,9",
+                "locale": "de",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74,0 bis 99,6 kg",
+                "locale": "de",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Übergewicht (Präadipositas) (WHO)",
+            "locale": "de",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gewichtsbereich mit einem BMI von 18,5 bis 24,9",
+                "locale": "de",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 bis 72,0 kg",
+                "locale": "de",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Adipositas Grad I (WHO)",
+            "locale": "de",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gewichtsbereich mit einem BMI von 18,5 bis 24,9",
+                "locale": "de",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 bis 72,0 kg",
+                "locale": "de",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Handlungsgrenzen für Asiaten (WHO 2004)",
+                "locale": "de",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "erhöhtes Risiko",
+                "locale": "de",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normalgewicht (angemessenes Gewicht) (WHO); bei Asiaten erhöhtes Risiko",
+            "locale": "de",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Intervallo di peso con IMC da 18,5 a 24,9",
+                "locale": "it",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56,7 a 76,3 kg",
+                "locale": "it",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Eutrofia (peso adeguato) (OMS)",
+            "locale": "it",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Intervallo di peso con IMC da 18,5 a 24,9",
+                "locale": "it",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74,0 a 99,6 kg",
+                "locale": "it",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sovrappeso (pre-obesità) (OMS)",
+            "locale": "it",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Intervallo di peso con IMC da 18,5 a 24,9",
+                "locale": "it",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 a 72,0 kg",
+                "locale": "it",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Obesità di classe I (OMS)",
+            "locale": "it",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Intervallo di peso con IMC da 18,5 a 24,9",
+                "locale": "it",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53,5 a 72,0 kg",
+                "locale": "it",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Punti di azione per asiatici (OMS 2004)",
+                "locale": "it",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "rischio aumentato",
+                "locale": "it",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normopeso (peso adeguato) (OMS); negli asiatici, rischio aumentato",
+            "locale": "it",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نطاق الوزن مع مؤشر كتلة الجسم من 18.5 إلى 24.9",
+                "locale": "ar",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "٥٦٫٧ إلى ٧٦٫٣ kg",
+                "locale": "ar",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تغذية طبيعية (وزن مناسب) (WHO)",
+            "locale": "ar",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نطاق الوزن مع مؤشر كتلة الجسم من 18.5 إلى 24.9",
+                "locale": "ar",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "٧٤٫٠ إلى ٩٩٫٦ kg",
+                "locale": "ar",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "زيادة الوزن (ما قبل السمنة) (منظمة الصحة العالمية)",
+            "locale": "ar",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نطاق الوزن مع مؤشر كتلة الجسم من 18.5 إلى 24.9",
+                "locale": "ar",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "٥٣٫٥ إلى ٧٢٫٠ kg",
+                "locale": "ar",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "السمنة من الدرجة الأولى (منظمة الصحة العالمية)",
+            "locale": "ar",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نطاق الوزن مع مؤشر كتلة الجسم من 18.5 إلى 24.9",
+                "locale": "ar",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "٥٣٫٥ إلى ٧٢٫٠ kg",
+                "locale": "ar",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "نقاط الإجراء للآسيويين (منظمة الصحة العالمية 2004)",
+                "locale": "ar",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "خطر متزايد",
+                "locale": "ar",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "وزن طبيعي (وزن مناسب) (منظمة الصحة العالمية)؛ لدى الآسيويين، خطر متزايد",
+            "locale": "ar",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMI为18.5至24.9的体重范围",
+                "locale": "zh",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56.7 至 76.3 kg",
+                "locale": "zh",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常体重（体重适宜）（WHO）",
+            "locale": "zh",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMI为18.5至24.9的体重范围",
+                "locale": "zh",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74.0 至 99.6 kg",
+                "locale": "zh",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "超重（前期肥胖）（WHO）",
+            "locale": "zh",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMI为18.5至24.9的体重范围",
+                "locale": "zh",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5 至 72.0 kg",
+                "locale": "zh",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "I 级肥胖（WHO）",
+            "locale": "zh",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMI为18.5至24.9的体重范围",
+                "locale": "zh",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5 至 72.0 kg",
+                "locale": "zh",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "亚洲人行动点（WHO 2004）",
+                "locale": "zh",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "风险增加",
+                "locale": "zh",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常体重（适当体重）（WHO）；亚洲人风险增加",
+            "locale": "zh",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMIが18.5～24.9の体重範囲",
+                "locale": "ja",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56.7～76.3 kg",
+                "locale": "ja",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常体重（適正体重）（WHO）",
+            "locale": "ja",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMIが18.5～24.9の体重範囲",
+                "locale": "ja",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74.0～99.6 kg",
+                "locale": "ja",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "過体重（前肥満）（WHO）",
+            "locale": "ja",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMIが18.5～24.9の体重範囲",
+                "locale": "ja",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5～72.0 kg",
+                "locale": "ja",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "肥満 1度（WHO）",
+            "locale": "ja",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BMIが18.5～24.9の体重範囲",
+                "locale": "ja",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5～72.0 kg",
+                "locale": "ja",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "アジア人の行動基準値（WHO 2004）",
+                "locale": "ja",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "リスク増加",
+                "locale": "ja",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常体重（適正体重）（WHO）；アジア人ではリスク増加",
+            "locale": "ja",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "70 kg, 175 cm: IMC 22,9 (eutrofia)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "18.5 से 24.9 तक BMI वाला वजन दायरा",
+                "locale": "hi",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "56.7 से 76.3 kg",
+                "locale": "hi",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  56.7,
+                  76.3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "यूट्रोफी (उचित वजन) (WHO)",
+            "locale": "hi",
+            "template": "documented-authored-57654a09ece3621f4f91"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 kg, 200 cm: IMC 25,0 (limite do sobrepeso)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "18.5 से 24.9 तक BMI वाला वजन दायरा",
+                "locale": "hi",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "74.0 से 99.6 kg",
+                "locale": "hi",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  74,
+                  99.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अधिक वजन (पूर्व-मोटापा) (WHO)",
+            "locale": "hi",
+            "template": "documented-authored-da97351b2e2b879501e2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "95 kg, 170 cm: IMC 32,9 (obesidade grau I)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "18.5 से 24.9 तक BMI वाला वजन दायरा",
+                "locale": "hi",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5 से 72.0 kg",
+                "locale": "hi",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मोटापा श्रेणी I (WHO)",
+            "locale": "hi",
+            "template": "documented-authored-814ed5fa3db9331b17ec"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Asiático, 70 kg, 170 cm: IMC 24,2 (risco aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "18.5 से 24.9 तक BMI वाला वजन दायरा",
+                "locale": "hi",
+                "template": "documented-authored-7c9e3ac7ff10ef4de497"
+              },
+              "value": {
+                "text": "53.5 से 72.0 kg",
+                "locale": "hi",
+                "template": "documented-authored-b9f309da2bfc3faf4198",
+                "sourceNumbers": [
+                  53.5,
+                  72
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एशियाई लोगों के लिए कार्रवाई बिंदु (WHO 2004)",
+                "locale": "hi",
+                "template": "documented-authored-d92c49cf1ead7e30a3f7"
+              },
+              "value": {
+                "text": "बढ़ा हुआ जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-9e10f3a103cb3b355c19"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सामान्य वज़न (उचित वज़न) (WHO); एशियाई लोगों में, बढ़ा हुआ जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-eb8370392bb524ee758e"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

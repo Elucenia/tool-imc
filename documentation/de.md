@@ -76,3 +76,44 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Eutrophie (angemessenes Gewicht) (WHO)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gewichtsbereich mit einem BMI von 18,5 bis 24,9 | 56,7 bis 76,3 kg |
+
+
+### 2
+
+Übergewicht (Präadipositas) (WHO)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gewichtsbereich mit einem BMI von 18,5 bis 24,9 | 74,0 bis 99,6 kg |
+
+
+### 3
+
+Adipositas Grad I (WHO)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gewichtsbereich mit einem BMI von 18,5 bis 24,9 | 53,5 bis 72,0 kg |
+
+
+### 4
+
+Normalgewicht (angemessenes Gewicht) (WHO); bei Asiaten erhöhtes Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gewichtsbereich mit einem BMI von 18,5 bis 24,9 | 53,5 bis 72,0 kg |
+| Handlungsgrenzen für Asiaten (WHO 2004) | erhöhtes Risiko |
+
